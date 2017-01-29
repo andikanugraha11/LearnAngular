@@ -26,4 +26,8 @@ export class DikaPostService{
 	getPost(){
 		return this.posts;
 	}
+
+	addPostS(newPost){
+		this.posts.push(newPost);
+	}
 }
