@@ -1,9 +1,12 @@
 import { Component, Pipe, PipeTransform } from '@angular/core';
 
 
+
 @Component({
   selector: 'my-app',
-  template: `<h1 *ngIf="tampil" >Hello {{name}}</h1>
+  template: `
+        <dika-post></dika-post>
+        <h1 *ngIf="tampil" >Hello {{name}}</h1>
   			<span [ngSwitch]="nama">
   				<span *ngSwitchCase="'andika'" >Andika Nugraha</span>
   				<span *ngSwitchCase="'dika'" >Muahmmad Andika</span>
